@@ -192,18 +192,16 @@ export class GridInline extends Component {
       this.setState(state);
     }
   }
-
-  getItemHeight(item: any): number {
+   getItemHeight(item) {
     if (item.key && this.items.hasOwnProperty(item.key)) {
-      const component = this.items[item.key];
-      const el = (ReactDOM.findDOMNode(component): any);
+      const comp = this.items[item.key];
+      const el = comp.node
       const candidate = [el.scrollHeight, el.clientHeight, el.offsetHeight, 0].filter(isNumber);
-
       return Math.max(...candidate);
     }
-
     return 0;
   }
+  
 
 
   doLayout(props: InlineProps): InlineState {
