@@ -305,7 +305,8 @@ export class GridInline extends Component {
     this.items[key] = item;
 
     if (this.props.monitorImagesLoaded && typeof imagesLoaded === 'function') {
-      const node = ReactDOM.findDOMNode(item);
+      const nodeRef = useRef(item)
+      const node = nodeRef.current
       const imgLoad = imagesLoaded(node);
 
       imgLoad.once('always', () => raf(() => {
