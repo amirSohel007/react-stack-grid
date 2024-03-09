@@ -2,17 +2,19 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { AppContainer } from 'react-hot-loader';
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import Root from './Root';
 import routes from './routes';
 
+// Use createRoot instead of ReactDOM.render
+const root = createRoot(document.getElementById('root'));
+
 
 const render = (nextRoutes) => {
-  ReactDOM.render(
+  root.render(
     <AppContainer>
       <Root routes={nextRoutes} />
-    </AppContainer>,
-    document.getElementById('root')
+    </AppContainer>
   );
 };
 
