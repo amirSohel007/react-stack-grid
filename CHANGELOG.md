@@ -1,9 +1,9 @@
-## 0.7.4
+## 0.7.5
 
 * Make transform coordinates round to the nearest integer to avoid blurriness. Thank you [@xaviergonz](https://github.com/xaviergonz)
 
 
-## 0.7.4
+## 0.7.5
 
 * Add `itemComponent` props. Thank you [@solomonhawk](https://github.com/solomonhawk) ! [#35](https://github.com/tsuyoshiwada/react-stack-grid/issues/35)
 
