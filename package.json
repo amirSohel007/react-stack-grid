@@ -1,6 +1,6 @@
 {
   "name": "react-grid-image",
-  "version": "0.7.5",
+  "version": "0.7.6",
   "description": "Pinterest like layout components for React.js",
   "main": "lib/index.js",
   "scripts": {
@@ -92,7 +92,7 @@
     "inline-style-prefixer": "^3.0.6",
     "invariant": "^2.2.2",
     "prop-types": "^15.5.10",
-    "react-sizeme": "^2.2.0",
+    "react-sizeme": "^3.0.2",
     "react-transition-group": "^1.2.0",
     "shallowequal": "^1.0.1"
   },
